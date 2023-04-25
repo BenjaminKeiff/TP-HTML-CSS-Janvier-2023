@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    background-image: url(https://www.tomsguide.fr/content/uploads/sites/2/2019/10/thanos-retour-marvel-phase-5.jpg);
+    background-repeat: no-repeat;
+    background-size: 1900px;
+}
+
+.animation {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform-style: preserve-3d;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate
+{
+    0%
+    {
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%
+    {
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.cadre {
+    display: flex;
+    position: absolute;
+    -webkit-animation: animation 10s linear infinite;
+}
+
+@keyframes animation {
+
+    0% {
+        top: 100px;
+        left: 100px;
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        top: 100px;
+        left: 1820px;
+    }    
+    50% {
+        top: 750px;
+        left: 100px;
+    }
+    75% {
+        top: 750px;
+        left: 1820px;
+    }
+    100% {
+        top: 100px;
+        left: 100px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+.animation span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i) * 60deg)) translateZ(100px);
+}
+
+.animation span div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+#div1 {
+    background-color: #004ed6;
+    border-radius: 50px;
+}
+
+#div2 {
+    background-color: #d4a612;
+    border-radius: 50px;
+}
+
+#div3 {
+    background-color: #f00b20;
+    border-radius: 50px;
+}
+
+#div4 {
+    background-color: #9f1ab1;
+    border-radius: 50px;
+}
+
+#div5 {
+    background-color: #047823;
+    border-radius: 50px;
+}
+
+#div6 {
+    background-color: #bb541a;
+    border-radius: 50px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #ffffff;
+}
+footer p {
+    text-align: right;
+    margin-right: 20px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+}

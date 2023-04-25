@@ -1,0 +1,296 @@
+p {
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    margin: auto;
+    text-shadow: 1px 1px 1px black;
+}
+
+#fond {
+    display: flex;
+    flex-direction: column;
+    width: 1600px;
+    height: 800px;
+    border: 1px solid black;
+    top: 50px;
+    left: 50px;
+    background-color: #111111;
+}
+
+.ball1 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25%;
+    position: relative;
+    -webkit-animation: ball1 7s linear infinite;
+}
+
+@keyframes ball1 {
+
+    0% {
+        background-color: blue;
+        top: 10px;
+        left: 10px;
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        background-color: green;
+        top: 10px;
+        left: 1540px;
+    }    
+    50% {
+        background-color: yellow;
+        top: 740px;
+        left: 1540px;
+    }
+    75% {
+        background-color: orange;
+        top: 740px;
+        left: 10px;
+    }
+    100% {
+        background-color: red;
+        top: 10px;
+        left: 10px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+ .ball2 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25%;
+    position: absolute;
+    -webkit-animation: ball2 7s linear infinite;
+    animation-delay: 200ms;
+}
+
+@keyframes ball2 {
+    0% {
+        background-color: blue;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        background-color: green;
+        top: 20px;
+        left: 1550px;
+    }    
+    50% {
+        background-color: yellow;
+        top: 750px;
+        left: 1550px;
+    }
+    75% {
+        background-color: orange;
+        top: 750px;
+        left: 20px;
+    }
+    100% {
+        background-color: red;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.ball3 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25%;
+    position: absolute;
+    -webkit-animation: ball3 7s linear infinite;
+    animation-delay: 400ms;
+
+}
+
+@keyframes ball3 {
+    0% {
+        background-color: blue;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        background-color: green;
+        top: 20px;
+        left: 1550px;
+    }    
+    50% {
+        background-color: yellow;
+        top: 750px;
+        left: 1550px;
+    }
+    75% {
+        background-color: orange;
+        top: 750px;
+        left: 20px;
+    }
+    100% {
+        background-color: red;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.ball4 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25%;
+    position: absolute;
+    -webkit-animation: ball4 7s linear infinite;
+    animation-delay: 600ms;
+
+}
+
+@keyframes ball4 {
+    0% {
+        background-color: blue;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        background-color:green;
+        top: 20px;
+        left: 1550px;
+    }    
+    50% {
+        background-color:yellow;
+        top: 750px;
+        left: 1550px;
+    }
+    75% {
+        background-color:orange;
+        top: 750px;
+        left: 20px;
+    }
+    100% {
+        background-color:red;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.ball5 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25%;
+    position: absolute;
+    -webkit-animation: ball5 7s linear infinite;
+    animation-delay: 800ms;
+
+}
+
+@keyframes ball5 {
+    0% {
+        background-color: blue;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        background-color: green;
+        top: 20px;
+        left: 1550px;
+    }    
+    50% {
+        background-color: yellow;
+        top: 750px;
+        left: 1550px;
+    }
+    75% {
+        background-color: orange;
+        top: 750px;
+        left: 20px;
+    }
+    100% {
+        background-color: red;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+.ball6 {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 25%;
+    position: absolute;
+    -webkit-animation: ball6 7s linear infinite;
+    animation-delay: 1000ms;
+
+}
+
+@keyframes ball6 {
+    0% {
+        background-color: blue;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        background-color: green;
+        top: 20px;
+        left: 1550px;
+    }    
+    50% {
+        background-color: yellow;
+        top: 750px;
+        left: 1550px;
+    }
+    75% {
+        background-color: orange;
+        top: 750px;
+        left: 20px;
+    }
+    100% {
+        background-color: red;
+        top: 20px;
+        left: 20px;
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+footer {
+    position: absolute;
+    margin: 0;
+    padding: 2px;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #111111;
+    bottom: 0;
+}
+footer h2 {
+    font-size: medium;
+    font-weight: 500;
+    text-align: right;
+    margin-right: 20px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+}

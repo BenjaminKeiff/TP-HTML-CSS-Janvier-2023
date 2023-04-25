@@ -1,0 +1,128 @@
+#container {
+    position: absolute;
+    top: 300px;
+    left: 650px;
+}
+
+#rond1 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#rond2 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    background-color: gray;
+    border-radius: 50%;
+    left: 200px;
+}
+
+#rond3 {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50px;
+    background-color: white;
+    border-radius: 50%;
+    left: 350px;
+}
+
+.ball1 {
+    -webkit-animation: ball1 5s linear infinite;
+}
+
+.ball2 {
+    -webkit-animation: ball2 5s linear infinite;
+}
+
+.ball3 {
+    -webkit-animation: ball3 5s linear infinite;
+}
+
+
+@keyframes ball1 {
+    0% {
+        background-color: black;
+    }
+    33% {
+        background-color: white;
+    }    
+
+}
+
+@keyframes ball2 {
+    34% {
+        background-color: black;
+    }  
+    66% {
+        background-color: white;
+        
+    }
+}
+
+@keyframes ball3 {
+    67% {
+        background-color: black;
+    }
+    100% {
+        background-color: white;
+        
+    }
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+h1 {
+    width: 100%;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+    font-size: 60px;
+    padding: 25px;
+    background-image: url(../media/formation-java-jee.webp);
+    background-position: center;
+    color: whitesmoke;
+    text-shadow: 1px 1px 1px black;
+    text-decoration: none;
+  
+
+}
+h1 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #111111;
+}
+footer p {
+    text-align: right;
+    margin-right: 20px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+}

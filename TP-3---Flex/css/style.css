@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+*{
+    margin: 0;
+}
+
+/* ############################################## */
+/* ################## HEADER #################### */
+/* ############################################## */
+
+header h1 {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(247, 65, 65);
+}
+
+/* ############################################## */
+/* ################### NAV ##################### */
+/* ############################################## */
+
+nav ul {
+    display: flex;
+    list-style-type:none;
+    text-align: center;
+    padding: 0;
+    flex-grow: 1;
+}
+
+nav ul li  {
+    background-color: rgb(247, 65, 65);
+    justify-content: center;
+    flex: 1 0 auto;
+    border: 1px solid black;
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+    /* align-content: stretch; */
+    display: flex;
+    flex: 1 0 auto;
+    justify-content: center;
+}
+
+/* ############################################## */
+/* ################## FOOTER #################### */
+/* ############################################## */
+
+footer {
+    background-color: greenyellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+
+/* ############################################## */
+/* ################### MAIN ##################### */
+/* ############################################## */
+
+main {
+    height: 100vh;
+    color: whitesmoke;
+    display: flex;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 10;
+    background-color: blueviolet;
+}
+
+section article {
+    flex: 10 0 200px;
+    border: 1px dashed whitesmoke; 
+}
+
+aside {
+    background-color: aqua;
+    flex: 2 0 auto;
+    color: black;
+}
+
+#aside2 {
+    background-color: rgb(253, 127, 255);
+}

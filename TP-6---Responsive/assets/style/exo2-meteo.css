@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* ######################################################
+################### MOBILE FIRST #####################
+###################################################### */
+
+body {
+    font-family: Oswald,'Courier New', Courier, monospace ;
+    background-color: whitesmoke;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* ######################################################
+###################### HEADER ########################
+###################################################### */
+
+header {
+    background-color: rgb(1, 1, 158);
+    margin: 0;
+    padding: 6px;
+    width: 100%;
+    color: whitesmoke;
+    height: 90px;
+    margin-bottom: 0;
+}
+
+header img {
+    width: 100px;
+    padding: 0;
+}
+
+header h1 {
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+    color: whitesmoke;
+    word-spacing:5px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    height: 50px;
+    text-shadow:  1px 1px 1px rgb(1, 1, 158);
+}
+
+#logo {
+    position: absolute;
+    top: -15px;
+}
+
+#logo:hover {
+    opacity: 0.5;
+}
+
+
+header div h1 strong {
+    color: rgb(234, 191, 3);
+}
+
+
+#backMenu {
+    position: absolute;
+    top: 0;
+    right: 5px;
+}
+
+header div a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+header div a:hover {
+    text-decoration: none;
+    color: rgb(234, 191, 3);
+    font-size: 17px;
+    
+}
+
+/* ######################################################
+###################### MAIN ########################
+###################################################### */
+
+main {
+    margin-top: 5px ;
+    margin-left: 10px;
+}
+
+#cityToday h2 {
+    font-size:28px;
+    margin: 0;
+}
+
+#actualDay {
+    font-size: medium;
+}
+
+#MainTemperature span {
+    font-size: 32px;
+    position: relative;
+    top: -40px;
+    left: 15%;
+}
+
+#MainForecast div img {
+    display: inline-block;
+    padding-top: 5px;
+    width: 110px;
+    animation: sunlight 5s linear infinite;
+}
+
+@keyframes sunlight {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+#MainForecast div {
+    display: inline-block;
+}
+
+#MainDetail {
+    margin-left: 20%;
+}
+
+.otherDay {
+    height: 80px;
+}
+
+.otherDay div {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.week {
+    width: 60px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.icons {
+    position: relative;
+    margin-left: 10%;
+}
+
+.icons img {
+    width: 75px;
+    animation: allIcon 1s linear infinite;
+}
+
+@keyframes allIcon {
+    0% {
+        -webkit-transform: rotate(-5deg);
+    }
+    50% {
+        -webkit-transform: rotate(5deg);
+    }
+    100% {
+        -webkit-transform: rotate(-5deg);
+    }
+}
+
+.temp {
+    position: relative;
+    margin-left: 10%;
+}
+
+.humidity {
+    position: absolute;
+    margin-left: 10%;
+}
+
+/* ######################################################
+###################### FOOTER ########################
+###################################################### */
+
+footer {
+    width: 100%;
+    background-color: rgb(1, 1, 158);
+    font-weight: 500;
+    text-align: right;
+    margin: 0;
+    padding: 1px;
+    bottom: 0px;
+}
+
+footer div {
+    padding: 0;
+    margin: 0;
+    padding-right: 10px;
+}
+
+footer div a {
+    color: rgba(245, 245, 245, 0.754);
+    text-decoration: none;
+}
+
+footer div a:hover {
+    color: rgba(245, 245, 245, 0.512);
+    text-decoration: none;
+}
+
+/* ######################################################
+###################### RESPONSIVE ########################
+###################################################### */
+
+/* #################### SMARTWATCH ###################### */
+
+@media screen and (max-width:160px) {
+    div #MainDetail {
+        display: none;
+    }
+
+    main section div div img {
+        padding-bottom: 20px;
+    }
+    
+    header h1 {
+        font-size: 28px;
+        margin-top: 58px;
+    }
+}
+
+@media screen and (max-width:200px) {
+    header h1 {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    section img {
+        display: none;
+    }
+    section div .humidity {
+        display: none;
+    }
+    #backMenu {
+        display: none;
+    }
+    #MainTemperature span {
+        font-size: 32px;
+        position: relative;
+        top: -30px;
+        left: 1.5%;
+    }
+
+    header img:hover {
+        width: 102px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    .icon img {
+        display: none;
+    }
+
+    div #MainDetail {
+        display: none;
+    }
+}
+
+/* #################### TABLETTE ###################### */
+
+
+@media screen and (min-width:800px) {
+    #MainDetail {
+        right: 1%;
+        padding: 0;
+        position: absolute;
+        top: 210px;
+        text-align: justify;
+    }
+
+    .week {
+        width: 60px;
+        text-align: center;
+        margin-left: 5px;
+    }
+    
+    .icons {
+        position: relative;
+        margin-left: 20%;
+    }
+    
+    .icons img {
+        width: 75px;
+    }
+    
+    .temp {
+        position: relative;
+        margin-left: 25%;
+    }
+    
+    .humidity {
+        position: absolute;
+        right: 3%;
+    }
+}
+
+/* #################### DESKTOP ###################### */
+
+
+@media screen and (min-width:1200px) {
+    #cityToday {
+        text-align: left;
+        margin-left: 1%;
+    }
+    
+    hr {
+        display: none;
+    }
+
+    #space {
+        display: block;
+    }
+
+    #actualDay {
+        position: relative;
+        top: -60px;
+        font-weight: 5500;
+        font-size: 18px;
+    }
+
+    #MainDetail {
+        right: 20px;
+        padding: 0;
+        position: absolute;
+        top: 145px;
+        text-align: justify;
+    }
+    
+    main div {
+        display: inline-block;
+    }
+
+    section  {
+        display: block;
+    } 
+
+    .week {
+        margin: auto;
+        padding: auto;
+        font-size: 18px;
+    }
+    
+    .icons {
+        margin: auto;
+        padding: auto;
+    }
+    
+    .icons img {
+        width: 125px;
+    }
+    
+    .temp {
+
+        margin: auto;
+        padding: auto;
+        font-size: 24px;
+
+    }
+    
+    .humidity {
+        position: relative;
+        margin: auto;
+        padding: auto;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    .otherDay {
+        height: 100%;
+        width: 13.7%;
+    }
+
+    .otherDay div {
+        text-align: center;
+        display: block;
+
+    }
+
+    footer {
+        position: fixed;
+    } 
+}

@@ -1,0 +1,240 @@
+/* ## Je défini la taille, le display, le template et les couleurs de fond de mon tableau ## */
+
+#grid {
+    height: 700px;
+    width: 1000px;
+    display: grid;
+    grid-template: repeat(14, 1fr) / repeat(20, 1fr);
+    grid-gap: 10px;
+    background-color: #030303;
+    border:10px solid #030303;
+  }
+  
+/* ## Et maintenant j'attribue a chacune des div leurs tailles et dans quel sens elles doivent
+      s'étendre grace à grid row et grid column et grace au span ## */
+  #div1 {
+    grid-row: span 3;
+    background-color: #e5e5e5;
+  }
+  
+  #div2 {
+    grid-column: span 8;
+    background-color: #e5e5e5;
+  }
+
+  #div3 {
+    grid-column: span 9;
+    background-color: #e5e5e5;
+  }
+  
+  #div4 {
+    grid-row: span 7;
+    background-color: #e5e5e5;
+  }
+
+  #div5 {
+    grid-row: span 7;
+    background-color: #efbd0e;
+  }
+
+  #div6 {
+    grid-column: span 8;
+    grid-row: span 2;
+    background-color: #13036e;
+  }
+  
+  #div7 {
+    grid-column: span 3;
+    grid-row: span 2;
+    background-color: #e5e5e5;
+  }
+
+  #div8 {
+    grid-column: span 6;
+    grid-row: span 2;
+    background-color: #13036e;
+  }
+
+  #div9 {
+    grid-row: span 6;
+    background-color: #0d0d0d;
+  }
+
+  #div10 {
+    grid-row: span 6;
+    grid-column: span 3;
+    background-color: #e5e5e5;
+  }
+  
+  #div11 {
+    grid-row: span 10;
+    background-color: #0d0d0d;
+  }
+
+  #div12 {
+    grid-row: span 4;
+    grid-column: span 3;
+    background-color: #e5e5e5;
+  }
+
+  #div13 {
+    grid-row: span 4;
+    background-color: #e5e5e5;
+  }
+
+  #div14 {
+    grid-row: span 4;
+    grid-column: span 3;
+    background-color: #efbd0e;
+  }
+
+  #div15 {
+    grid-row: span 4;
+    grid-column: span 5;
+    background-color: #c20101;
+  }
+
+  #div16 {
+   grid-row: span 4;
+   background-color: #c20101;
+}
+
+#div17 {
+    grid-row: span 2;
+    background-color: #efbd0e;
+}
+
+#div18 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-color: #c20101;
+}
+
+#div19 {
+    grid-row: span 2;
+    grid-column: span 3;
+    background-color: #13036e;
+}
+
+#div20 {
+    grid-row: span 2;
+    grid-column: span 5;
+    background-color: #e5e5e5;
+}
+
+#div21 {
+    grid-row: span 2;
+    background-color: #e5e5e5;
+}
+
+#div22 {
+    grid-row: span 2;
+    grid-column: span 2;
+    background-color: #0d0d0d;
+}
+
+#div23 {
+    grid-row: span 4;
+    background-color: #e5e5e5;
+}
+
+#div24 {
+    grid-row: span 3;
+    grid-column: span 5;
+    background-color: #e5e5e5;
+}
+
+#div25 {
+    grid-row: span 3;
+    grid-column: span 4;
+    background-color: #e5e5e5;
+}
+
+#div26 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-color: #13036e;
+}
+
+#div27 {
+    grid-row: span 3;
+    background-color: #efbd0e;
+}
+
+#div28 {
+    grid-row: span 3;
+    grid-column: span 2;
+    background-color: #e5e5e5;
+}
+
+#div29 {
+    grid-column: span 3;
+    grid-row: span 2 ;
+    background-color: #c20101;
+}
+
+/* ## Suite a un oublie j'ai du positionné manuelement cette div ainsi que la div 34 à la fin ##  */
+
+#div30 {
+    grid-area: 10 / 2 / 14 / 5;
+    background-color: #c20101;
+}
+
+#div31 {
+    grid-row: span 2;
+    grid-column: span 6;
+    background-color: #0d0d0d;
+}
+
+#div32 {
+    grid-row: span 2;
+    grid-column: span 5;
+    background-color: #e5e5e5;
+}
+
+#div33 {
+    grid-column: span 5;
+    background-color: #e5e5e5;
+}
+
+#div34 {
+    grid-area: 15 / 7 / 10 / 6;
+    background-color: #efbd0e;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: whitesmoke;
+    background-color: #111111;
+}
+footer p {
+    text-align: right;
+    margin-right: 55px;
+
+}
+button {
+    text-decoration: none;
+    color: whitesmoke;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    z-index: 10;
+    background-color: #111111;
+}
+
+button a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+}
+footer a {
+    text-decoration: none;
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
+    position: fixed;
+    bottom: 15px;
+    left: 20px;
+}
